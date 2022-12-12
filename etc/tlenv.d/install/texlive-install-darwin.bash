@@ -23,7 +23,7 @@ export_texlive_install_platform() {
 
     ## set install-tl -force-platform <platform>
     case "${detected_version_name}" in
-        201[7-9])
+        2012|201[7-9])
             export TEXLIVE_INSTALL_PLATFORM=x86_64-darwin
             ;;
         *)
